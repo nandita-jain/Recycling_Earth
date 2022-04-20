@@ -10,6 +10,7 @@ class UserService {
     async createUser(req, res) {
         try {
             const saltRounds = 10;
+            // console.log(req.body);
             const hashPassword = await bcrypt.hash(req.body.password, saltRounds);
             console.log(hashPassword);
 
@@ -63,6 +64,21 @@ class UserService {
                 message: "User not found, internal server error",
                 error: error
             });
+        }
+    }
+
+    async getUser(req,res){
+        try {
+            const user=await User.findOne({_id:req.user});
+            if(user){
+                return user;
+            }else{
+                console.log("User not found");
+                return "Not found";
+            }
+        } catch (error) {
+            console.log("User not found, internal server error");
+            process.exit();
         }
     }
 }

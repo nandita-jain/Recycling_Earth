@@ -25,9 +25,13 @@
             <li class="nav-item">
               <a class="nav-link" href="/auth/register">Join Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Locate-dustbin">Locate Dustbin</a>
-            </li>
+
+            <%if(data!==null){%>
+              <li class="nav-item">
+                <a class="nav-link" href="#Locate-dustbin">Locate Dustbin</a>
+              </li>
+            <%}%>
+
             <li class="nav-item">
               <a class="nav-link" href="#Heros">Our Heros</a>
             </li>
@@ -68,19 +72,23 @@
 
   
   <!-- Locate Dustbin -->
-
-  <section id="Locate-dustbin">
-    <h1 class="h-primary center">Locate Dustbin Nearby</h1>
-    <div id="Dustbin">
-      <p> Ut aliquam purus sit amet luctus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Nec
-        ultrices dui sapien eget mi proin sed libero enim. Adipiscing commodo elit at imperdiet dui accumsan sit amet.
-        Congue quisque egestas diam in arcu cursus euismod quis. Dui sapien eget mi proin sed libero. Tristique senectus
-        et netus et malesuada. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Volutpat
-        maecenas volutpat blandit aliquam. Id ornare arcu odio ut sem. Id venenatis a condimentum vitae sapien
-        pellentesque habitant morbi tristique. Donec et odio pellentesque diam volutpat commodo sed egestas. Platea
-        dictumst quisque sagittis purus sit. Risus feugiat in ante metus dictum at.</p>
-    </div>
-  </section>
+  <%if(data!==null){%>
+    <section id="Locate-dustbin">
+      <h1 class="h-primary center">Locate Dustbin Nearby</h1>
+      <div class="container" id="Dustbin" style="text-align: center;">
+        <iframe
+        width="1000"
+        height="500"
+        frameborder="0"
+        style="border: 0"
+        referrerpolicy="no-referrer-when-downgrade"
+        src=<%=data%>
+        allowfullscreen
+      >
+      </iframe>
+      </div>
+    </section>
+  <%}%>
 
 
   <!-- Heros Section -->

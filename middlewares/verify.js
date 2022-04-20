@@ -3,7 +3,7 @@ const jwt=require("jsonwebtoken");
 const verify=async (req,res,next)=>{
     try {
         const token=await req.cookies["secret"];
-        console.log(token);
+        // console.log("Token:"+token);
         const payload=await jwt.verify(token,process.env.SECRET_KEY);
         // console.log(payload);
         if(payload){

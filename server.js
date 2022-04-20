@@ -24,16 +24,24 @@ app.use(express.urlencoded({
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    res.render("home.ejs");
-});
+
+
+// app.get("/", (req, res) => {
+//     res.render("home.ejs");
+// });
+
+
 
 //Routers
 const authRouter = require("./routes/auth");
+const homeRouter = require("./routes/index");
 
 app.use("/auth/", authRouter);
+app.use("/", homeRouter);
 
-
+app.get("/map", (req, res) => {
+    res.render("posts");
+})
 
 //Server
 app.listen(process.env.PORT || 3000, () => {
