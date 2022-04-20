@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <title>Query-Bot</title>
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2017/07/19/16/44/question-2519654_960_720.png');
+        }
+        
+        h1 {
+            text-align: center;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body style="background-color: #E9EFC0;">
+    <div class="welcome">
+        <u><h1>FAQ'S on Waste Management</h1></u>
+
+    </div>
+    <div style="height: 550px; width: 90%; margin-top:8%; margin-left:24%" id="webchat" role="main"></div>
+    <script>
+        // Set  the CSS rules.
+        const styleSet = window.WebChat.createStyleSet({
+            bubbleBackground: 'rgba(0, 0, 255, .1)',
+            bubbleFromUserBackground: 'rgba(0, 255, 0, .1)',
+            rootHeight: '100%',
+            rootWidth: '60%',
+            backgroundColor: 'paleturquoise'
+        });
+
+        styleSet.textContent = {
+            ...styleSet.textContent,
+            fontFamily: "'Comic Sans MS', 'Arial', sans-serif",
+            fontWeight: 'bold'
+        };
+
+        const avatarOptions = {
+            botAvatarImage: 'https://cdn-icons.flaticon.com/png/512/1533/premium/1533105.png?token=exp=1650421153~hmac=e2d389f4484493eaaf7f7c8e6f5bf942',
+            botAvatarInitials: 'BF',
+            userAvatarImage: 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
+            userAvatarInitials: 'WC'
+        };
+
+        window.WebChat.renderWebChat({
+            directLine: window.WebChat.createDirectLine({
+                token: 'ED-fRZ6QAgg.Qzh84NM8HAK4NTwg97SJYbTtmWoYC2bLgaTHXayxjUQ'
+            }),
+            styleSet
+        }, document.getElementById('webchat'));
+    </script>
+
+</body>
+
+</html>

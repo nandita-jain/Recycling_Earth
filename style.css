@@ -45,8 +45,8 @@ body {
     left: 800px;
     position: relative;
     height: 600px;
-    width: 960px;
-    padding: 20px;
+    width: 850px;
+    padding: 12px;
     background-color: #064635;
     color: white;
     bottom: 400px;
@@ -219,7 +219,7 @@ body {
 }
 
 
-/* know-more page*/
+/* contact-us */
 
 .btncontact {
     background: #34d94d;
@@ -251,6 +251,12 @@ body {
     background-image: linear-gradient(to bottom, #60a4e8, #4c91e0);
     text-decoration: none;
 }
+
+
+/* New  */
+
+
+/* know-more page classes*/
 
 .team-ups {
     display: block;
@@ -301,4 +307,39 @@ body {
     position: relative;
     left: 150px;
     top: 350px;
+}
+
+#benefits {
+    padding: 1%;
+}
+
+.benefitsimg {
+    position: relative;
+    left: 430px;
+    height: 400px;
+    width: 700px;
+}
+
+.know-moreintro {
+    text-align: center;
+    padding: 20px;
+    background-color: #064635;
+    color: white;
+    bottom: 100px;
+}
+
+.know-moreintro1 {
+    text-align: left;
+}
+
+.chaticon {
+    position: fixed;
+    right: 1%;
+    top: 15%;
+}
+
+.chaticonimg {
+    height: 30%;
+    width: 22%;
+    opacity: 0.8;
 }
