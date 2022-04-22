@@ -29,10 +29,9 @@
 }
 
 body {
-    /* background-color: #FBF8F1; */
-    background-image: url('images/background.jpg');
+    background-color: #FBF8F1;
     font-family: "Montserrat";
-    padding-right:-4px;
+    
 }
 
 
@@ -40,48 +39,31 @@ body {
 
 #introduction {
     position: absolute;
-    padding-bottom: 0;
-    margin-bottom: 0;
 }
 
 .intro2 {
     text-align: center;
-    left: 700px;
+    left: 800px;
     position: relative;
-    height: 350px;
-    width: 750px;
+    height: 600px;
+    width: 850px;
     padding: 12px;
-    background-color: #1C7947;
+    background-color: #95CD41;
     color: white;
-    bottom: 350px;
+    bottom: 400px;
 }
 
 .img1 {
     float: left;
     height: 400px;
-    width: 700px;
+    width: 600px;
     position: relative;
-    left: 50px;
+    left: 150px;
     top: 150px;
 }
-/* .dust{
-    height: 400px;
-    width: 400px;
-    left: 700px;
-    bottom: 50px;
-} */
-.imgnew {
-    float: left;
-    height: 400px;
-    width: 700px;
-    position: relative;
-    left: 50px;
-    top: 350px;
-    margin-bottom: 20px;
-}
+
 @media (max-width: 1200px) {
     #introduction,
-    .imgnew
     .intro2,
     .img1 {
         position: static;
@@ -90,7 +72,7 @@ body {
 }
 
 .btn {
-    background: #95CD41;
+    background: #064635;
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
@@ -101,7 +83,7 @@ body {
 
 .btn:hover {
     background-color: #FBF8F1;
-    color: #1C7947;
+    color: #064635;
 }
 
 
@@ -109,14 +91,13 @@ body {
 
 #Join {
     text-align: left;
-    background-color: #1C7947;
+    background-color: #064635;
     padding: 0 5% 5% 0;
-    margin-top: 0;
 }
 
 .join-head {
     text-align: left;
-    margin: 0% 3% 0 3%;
+    margin: 5% 3% 0 3%;
     padding-top: 3%;
     font-family: "Roboto";
     color: #FBF8F1;
@@ -137,7 +118,7 @@ body {
     font-size: 1rem;
     background-color: #FBF8F1;
     box-sizing: border-box;
-    color: #1C7947;
+    color: #064635;
 }
 
 @media(max-width: 600px) {
@@ -182,10 +163,9 @@ body {
 /* Heros Section */
 
 #Heros {
-    background-color: #1C7947;
+    background-color: #064635;
     text-align: center;
     color: #fff;
-    font-family: 'Roboto', sans-serif; 
 }
 
 .carousel-item {
@@ -214,11 +194,10 @@ body {
     display: block;
     border-radius: 100%;
     width: 50%;
-    height: 65%;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #1C7947;
+    background-color: #064635;
 }
 
 #About-Us p {
@@ -232,7 +211,7 @@ body {
 #footer {
     padding: 5% 15%;
     text-align: center;
-    background-color: #1C7947;
+    background-color: #064635;
     color: #FBF8F1;
 }
 
@@ -260,8 +239,8 @@ body {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     position: relative;
-    
-    left: 31%;
+    top: 20px;
+    left: 550px;
 }
 
 .btncontact:hover {
@@ -301,7 +280,7 @@ body {
     height: 70px;
     width: 1600px;
     padding: 20px;
-    background-color: #1C7947;
+    background-color: #064635;
     color: white;
 }
 
@@ -322,7 +301,14 @@ body {
     left: 260px;
 }
 
-
+.imgnew {
+    float: left;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    left: 150px;
+    top: 350px;
+}
 
 #benefits {
     padding: 1%;
@@ -335,12 +321,11 @@ body {
     width: 700px;
 }
 
-
 .know-moreintro {
     text-align: center;
     padding: 20px;
-    
-    color: black;
+    background-color: #064635;
+    color: white;
     bottom: 100px;
 }
 
@@ -349,22 +334,15 @@ body {
 }
 
 .chaticon {
-    position: fixed;
-    right: 1%;
-    top: 15%;
+    
+   
+    
+
+    
 }
 
 .chaticonimg {
-    position: relative;
-    right: -80%;
-    height: 23%;
-    width: 20%;
+    height: 30%;
+    width: 22%;
     opacity: 0.8;
-}
-
-.article{
-    width: 500px;
-    height: 700px;
-    background-color: white;
-    margin: auto ;
 }
